@@ -1,20 +1,25 @@
 package list;
-import java.awt.*;
-import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
 
-        Listed listed=new Listed();
-        listed.add(201);
-        listed.add(30);
-        listed.add(25);
-        listed.print();
-        List list=new List();
-        list.add("S");
-        list.add("bz");
-        System.out.println(list);
-        listed.remove(20);
-        listed.print();
+        LinkedList linkedList =new LinkedList();
+        linkedList.add(201);
+        linkedList.add(30);
+        linkedList.add(25);
+        int siz=linkedList.getSize();
+        System.out.println(siz);
+        linkedList.oneNode(255);
+        linkedList.print();
+        linkedList.setElement(201);
+        linkedList.remove(201);
+        linkedList.print();
+
+//        List list=new List();
+//        list.add("S");
+//        list.add("bz");
+//        System.out.println(list);
+//        listed.remove(20);
+//        listed.print();
     }
 }
