@@ -13,5 +13,8 @@ public class Main {
         List list=new List();
         list.add("S");
         list.add("bz");
+        System.out.println(list);
+        listed.remove(20);
+        listed.print();
     }
 }
