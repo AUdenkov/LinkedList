@@ -2,7 +2,8 @@ package list;
 
 public class Listed {
     private LinkedList head;
-    private LinkedList start;
+    private LinkedList treem;
+    private LinkedList treems;
     private int size = 0;
 
     public Listed() {
@@ -15,15 +16,27 @@ public class Listed {
 
     public void add(int data) {
         LinkedList temp = new LinkedList(data);
-        head.next = temp;
+        if (size > 0) {
+            treem = head;
+            treem.next = temp;
+            head.next = treem.next;
+        }
         temp.next = null;
         temp.prev = head;
         head = temp;
         System.out.println(temp.prev);
         System.out.println(head);
         System.out.println(temp.next);
-        
         size++;
+    }
+
+    public void remove(int data) {
+        LinkedList next = head;
+        LinkedList prev=head;
+        while (next.date != data) {
+            if(next.date==data){
+            }
+        }
     }
 
     public void print() {
